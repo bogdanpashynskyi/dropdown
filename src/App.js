@@ -4,11 +4,11 @@ import './App.css';
 import Dropdown from './Dropdown';
 
 const config = [
-  {id: 1, value: "dropdown", text: "Dropdown"},
-  {id: 2, value: "preview", text: "Preview"},
-  {id: 3, value: "rename", text: "Rename"},
-  {id: 4, value: "delete", text: "Delete"},
-  {id: 5, value: "separate-link", text: "Separate link"},
+  {id: 1, text: "Dropdown"},
+  {id: 2, text: "Preview"},
+  {id: 3, text: "Rename"},
+  {id: 4, text: "Delete"},
+  {id: 5, text: "Separate link", details: "separate-link"},
 ]
 
 class App extends Component {
@@ -35,7 +35,7 @@ class App extends Component {
 
   render() {
     const { options, isOpen, selected } = this.state;
-    
+
     return (
       <div className="App">
         <Dropdown

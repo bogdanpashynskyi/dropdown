@@ -10,13 +10,12 @@ body {
 }
 
 .Dropdown__selector, .Dropdown__selector-items {
-  width: 150px;
-  font-size: 25px;;
+  width: 200px;
+  font-size: 20px;;
 }
 
 .Dropdown__selector {
-  border: 1px solid sandybrown;
-  background-color: blanchedalmond;
+  background-color: white;
 }
 
 .Dropdown__selector:hover{
@@ -24,7 +23,6 @@ body {
 }
 
 .Dropdown__selector-items {
-  border: 1px solid brown;
   background-color: white;
 }
 
@@ -33,11 +31,24 @@ body {
   background-color: burlywood;
 }
 
+.Dropdown-open::after {
+  content: "▼";
+}
+
+.Dropdown-close::after {
+  content: "▲";
+}
+
 .open {
   display: block;
 }
 
 .closed {
   display: none;
+}
+
+.separate-link {
+  border-bottom: 1px solid gainsboro;
+  border-top: 1px solid gainsboro
 }
 
