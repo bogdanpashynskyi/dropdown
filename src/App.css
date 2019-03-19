@@ -9,12 +9,28 @@ body {
   justify-content: center;
 }
 
+.Dropdown__selector, .Dropdown__selector-items {
+  width: 150px;
+  font-size: 25px;;
+}
+
 .Dropdown__selector {
   border: 1px solid sandybrown;
+  background-color: blanchedalmond;
+}
+
+.Dropdown__selector:hover{
+  background-color: wheat;
 }
 
 .Dropdown__selector-items {
   border: 1px solid brown;
+  background-color: white;
+}
+
+.Dropdown__selector-items:hover {
+  cursor: pointer;
+  background-color: burlywood;
 }
 
 .open {

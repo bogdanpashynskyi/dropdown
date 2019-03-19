@@ -35,7 +35,7 @@ class App extends Component {
 
   render() {
     const { options, isOpen, selected } = this.state;
-    console.log(selected);
+    
     return (
       <div className="App">
         <Dropdown
